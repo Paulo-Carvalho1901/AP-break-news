@@ -1,24 +1,8 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const userRoute = require("./src/routes/user.route")
 
-//ROTA
-    // Method HTTP - CRUD(CREATE, READ, UPDATE, DELETE)
-        // GET - pega uma info
-        // POST - Cria uma info
-        // PUT - altera todo a info
-        // PATH - altera parte da info
-        // DELETE - apaga uma info
+const app = express();
 
-
-    // Nome - Um identificador da rota
-
-    // functon (callback) - responsavel por executar algum comando
-
-
-app.get("/soma", (req, res) => {
-    const soma = 100 + 1;
-
-    res.send({soma: soma})
-});
+app.use("/teste", userRoute);
 
 app.listen(3000);
