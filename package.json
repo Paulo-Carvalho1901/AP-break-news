@@ -12,6 +12,7 @@
   "description": "API SPA for break news",
   "dependencies": {
     "express": "^4.21.1",
+    "mongoose": "^8.7.2",
     "nodemon": "^3.1.7"
   }
 }
